@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #3440A8;
+}
+
+/* Headings */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #3440A8;
+}
+
+/* Paragraphs and Lists */
+p, ol, ul {
+    margin-top: 0;
+}
+ol, ul {
+    padding: 0;
+    list-style: none;
+}
+ul.actions {
+    text-align: center;
+}
+ul.actions li {}
+p {
+    line-height: 180%;
+}
+strong {}
+
+/* Links */
+a {
+    color: #3440A8;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    overflow: hidden;
+    margin: 0em auto;
+    width: 1000px;
+}
+
+/* Image Styles */
+.image {
+    display: inline-block;
+}
+.image img {
+    display: block;
+    width: 100%;
+}
+.image-full {
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+.image-left {
+    float: left;
+    margin: 0 2em 2em 0;
+}
+.image-centered {
+    display: block;
+    margin: 0 0 2em 0;
+}
+.image-centered img {
+    margin: 0 auto;
+    width: auto;
+}
+
+/* List Styles */
+ul.staff {
+    margin-bottom: 3em;
+}
+ul.staff li {
+    display: inline-block;
+}
+ul.staff li img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+/* Social Icon Styles */
+ul.contact {
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
+}
+ul.contact li {
+    display: inline-block;
+    padding: 0em 0.30em;
+    font-size: 1em;
+}
+ul.contact li span {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+ul.contact li a {
+    color: #FFF;
+}
+ul.contact li a:before {
+    display: inline-block;
+    background: #3f3f3f;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+ul.contact li a.icon-facebook:before { background: #39599F; }
+ul.contact li a.icon-dribbble:before { background: #C4376B; }
+ul.contact li a.icon-tumblr:before { background: #31516A; }
+ul.contact li a.icon-rss:before { background: #F2600B; }
+
+/* Button Style */
+.button {
+    display: inline-block;
+    padding: 0em 3em;
+    background: #3440A8;
+    border-radius: 7px;
+    letter-spacing: 0.20em;
+    line-height: 4em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFF;
+}
+.button:before {
+    display: inline-block;
+    background: #FABA26;
+    margin-right: 1em;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #272925;
+}
+
+/* Title */
+.title {
+    margin-bottom: 3em;
+}
+.title h2 {
+    font-size: 2.7em;
+}
+.title .byline {
+    font-size: 18px;
+    color: #6F6F6F;
+}
+
+/* Column Styles */
+.box1, .box2, .box3, .box4 {
+    width: 235px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 3em 2em 2em 2em;
+    text-align: center;
+}
+.box1, .box2, .box3 {
+    float: left;
+    margin-right: 20px;
+}
+.box4 {
+    float: right;
+}
+.boxA, .boxB, .boxC {
+    width: 320px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 3em 2em 2em 2em;
+    text-align: center;
+}
+.boxA, .boxB {
+    float: left;
+    margin-right: 20px;
+}
+.boxC {
+    float: right;
+}
+.tbox1, .tbox2 {
+    width: 575px;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 3em 2em 2em 2em;
+    text-align: center;
+}
+.tbox1 {
+    float: left;
+}
+.tbox2 {
+    float: right;
+}
+
+/* Wrapper */
+#wrapper {
+    background: #FFF;
+}
+
+/* Header */
+#header-wrapper {
+    width: 100%;
+    position: relative;
+}
+#header {
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    height: 60px;
+    background: #3440A8;
+}
+
+/* Logo */
+#logo {
+    font-size: 22px;
+    margin-top: -5px;
+    margin-left: 60px;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+#logo a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Menu */
+#menu {
+    font-size: 16px;
+    margin-right: 40px;
+    margin-top: -8px;
+    position: absolute;
+    top: 2em;
+    right: 0;
+}
+#menu ul {
+    display: inline-block;
+}
+#menu li {
+    display: block;
+    float: left;
+    text-align: center;
+}
+#menu li a, #menu li span {
+    padding: 1em 1.5em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: #FFF;
+}
+#menu li:hover a, #menu li.active a, #menu li.active span {
+    border-radius: 8px;
+    color: #3440A8;
+}
+#menu .current_page_item a {
+    background: #FABA26;
+    color: #FFF;
+}
+#menu .icon {}
+
+/* Page */
+#page {
+    padding: 5em 0em;
+    text-align: center;
+}
+#page .button {
+    margin-top: 2em;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Gallery */
+div.gallery:hover {
+    border: 20px solid #fff;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+.responsive {
+    padding: 0 6px;
+    margin-left: 70px;
+    float: left;
+    width: 24.99999%;
+}
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+#content {
+    position: relative;
+    margin: 0px 20px;
+}
+
+/* Footer */
+#footer {}
+
+/* Copyright */
+#copyright {
+    overflow: hidden;
+    padding: 5em 0em;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+#copyright p {
+    text-align: center;
+    font-size: 1em;
+    color: rgba(52, 64, 168, 0.5);
+}
+#copyright a {
+    text-decoration: none;
+    color: rgba(52, 64, 168, 0.8);
+}
+
+/* Featured */
+#featured {
+    overflow: hidden;
+    padding: 5em 0em;
+    background: #3440A8;
+    color: rgba(255,255,255,.8);
+    text-align: center;
+}
+#featured a {
+    color: rgba(255,255,255,1);
+}
+#featured .button {
+    background: #FFF;
+    margin-top: 3em;
+    font-size: 1em;
+    color: #3440A8;
+}
+#featured img {
+    margin-bottom: 3em;
+    border-radius: 7px;
+}
+#featured .title h2 {
+    color: #FFF;
+}
+#featured .title .byline {
+    color: rgba(255,255,255,.6);
+}
+
+/* Extra */
+#extra {
+    overflow: hidden;
+    padding: 5em 0em;
+}
+#extra .title {
+    text-align: center;
+}
+#extra .button {
+    margin-top: 5em;
+}
+#extra .fa {
+    display: block;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Login */
+.login {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bookbg.png') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.login-logo {
+    font-size: 35px;
+    padding-left: 360px;
+}
+.login-logo a:link {
+    text-decoration: none;
+}
+.login-box {
+    margin-top: 150px;
+    margin-left: 150px;
+    width: 800px;
+    height: 300px;
+    background-color: transparent;
+    border-radius: 20px;
+}
+.login-logo {
+    padding-top: 10px;
+    float: center;
+}
+.login-box-body {
+    width: 320px;
+    margin-left: 350px;
+    margin-top: 40px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #3440A8; /* Ubah warna background */
+    border-bottom: 1px solid #333333;
+}
+.navbar-brand {
+    color: white; /* Ubah warna teks */
+    font-family: 'Poppins', sans-serif; /* Ubah font */
+}
+.navbar-nav > li > a {
+    color: white; /* Ubah warna teks */
+    font-family: 'Poppins', sans-serif; /* Ubah font */
+}
+.navbar-nav > li > a:hover {
+    background-color: #FABA26; /* Ubah warna latar saat hover */
+    border-radius: 5px; /* Tambahkan sedikit pembulatan */
+}
+.navbar-toggle {
+    border-color: #FABA26; /* Ubah warna border tombol toggle */
+}
+.navbar-toggle .icon-bar {
+    background-color: white; /* Ubah warna ikon bar */
+}
+
+/* Sidebar */
+.sidebar-collapse {
+    background-color: #770101; /* Ubah warna background */
+    color: white; /* Ubah warna teks */
+}
+#main-menu .fa {
+    color: #FABA26; /* Ubah warna ikon */
+}
+
+/* Logout Button */
+.navbar-right {
+    color: white; /* Ubah warna teks */
+    padding: 15px 50px 5px 50px;
+    font-size: 16px;
+}
+.navbar-right .btn-danger {
+    background-color: #FABA26; /* Ubah warna tombol */
+    border-color: #FABA26; /* Ubah warna border */
+}
+.navbar-right .btn-danger:hover {
+    background-color: #BE5C5C; /* Ubah warna latar saat hover */
+    border-color: #BE5C5C; /* Ubah warna border saat hover */
+    border-radius: 5px; /* Tambahkan sedikit pembulatan */
+}
+
+.carousel-inner .item img {
+    max-height: 200px; /* Adjust the height as per your requirement */
+    margin: 0 auto; /* Center the image horizontally */
+}

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap');
+
+li:hover {
+	background-color: #FABA26; /* Ubah warna latar saat hover */
+	border-radius: 5px; /* Tambahkan sedikit pembulatan */
+}
+
+.container {
+	position: center; /* Ini tidak valid, mungkin Anda ingin menggunakan text-align: center; */
+	font-family: 'Poppins', sans-serif; /* Ubah font */
+	color: #3440A8; /* Ubah warna teks */
+}
